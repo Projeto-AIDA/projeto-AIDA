@@ -1,0 +1,33 @@
+/* posicionando a logo AIDA */
+#imgspos {
+    position:absolute;
+    left: 50px;;
+    top: 8px;;
+    }
+
+/* estilização da lista de navegação */
+#menu {
+    background-color: rgb(6, 83, 94);
+    position: absolute;
+    width: 99%;
+}
+   
+/* estilizando o elemento âncora da lista de navegação */
+#menu a {
+    float:left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.menu-right{
+    float: right;
+}
+
+/* efeito de foco do elemento âncora da lista de navegação */
+#menu a:hover {
+    background-color: rgb(104, 177, 173);
+    color: black;
+}
