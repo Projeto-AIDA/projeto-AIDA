@@ -71,22 +71,26 @@
 
     <!-- fim -->
     <footer>
-        <div class="rodape-esquerda">
-          Fale conosco
-        </div>
-        <div class="rodape-direita">
+      <div class="container">
+        <div class="left-side"><strong>Fale conosco</strong></div>        
+        <div class="right-side">
           <form>
             <div id="form-footer">
-              <input type="text" placeholder="Nome">
-              <input type="text" placeholder="Telefone">            
-              <input type="email" placeholder="Email">            
-              <input type="text" placeholder="Assunto">              
+                <div class="form-line">
+                    <input type="text" placeholder="Nome">
+                    <input type="text" placeholder="Telefone">
+                </div>
+                <div class="form-line">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="form-line" id="footer-assunto">
+                  <textarea id="mensagem" name="mensagem" rows="4" cols="40" placeholder="Assunto"></textarea>
+                  <button type="submit" id="btn-enviar">Enviar</button>
+                </div>
             </div>
-            <div id="btn-enviar">
-              <button type="submit">Enviar</button>
-            </div>
-          </form>
+          </form>               
         </div>
+      </div>
     </footer>
     <script src="script.js"></script>      
 
