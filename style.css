@@ -1,33 +1,52 @@
-/* posicionando a logo AIDA */
-#imgspos {
-    position:absolute;
-    left: 50px;;
-    top: 8px;;
-    }
+* {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+}
 
-/* estilização da lista de navegação */
 #menu {
-    background-color: rgb(6, 83, 94);
-    position: absolute;
-    width: 99%;
-}
-   
-/* estilizando o elemento âncora da lista de navegação */
-#menu a {
-    float:left;
-    display: block;
+    padding: .5em 1em;
+    margin-bottom: .5em;
+    background-color: #0277B5;
     color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 15px;
-}
-.menu-right{
-    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* efeito de foco do elemento âncora da lista de navegação */
-#menu a:hover {
-    background-color: rgb(104, 177, 173);
-    color: black;
+#menu img {
+    margin-left: 6em;
+    width: 80px;
+    height: 45px;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 3em;
+}
+
+#menu ul li {
+    padding: 1em;
+    margin: 0 .5em; 
+    white-space: nowrap;
+    text-align: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+#menu ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+    white-space: nowrap;
+    display: block;
+}
+
+#menu ul li:hover {
+    background-color: #FAF4F4;
+}
+
+#menu ul li:hover a {
+    color: #0277B5;
 }
