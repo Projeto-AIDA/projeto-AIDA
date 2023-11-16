@@ -1,11 +1,63 @@
-/* Estilos Gerais do Rodapé */
+* {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    padding: .5em 1em;
+    margin-bottom: .5em;
+    background-color: #0277B5;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu img {
+    margin-left: 6em;
+    width: 80px;
+    height: 45px;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 3em;
+}
+
+#menu ul li {
+    padding: 1em;
+    margin: 0 .5em; 
+    white-space: nowrap;
+    text-align: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+#menu ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+    white-space: nowrap;
+    display: block;
+}
+
+#menu ul li:hover {
+    background-color: #FAF4F4;
+}
+
+#menu ul li:hover a {
+    color: #0277B5;
+}
+
 footer {
     background-color: #0874b4;
     text-align: center;
     padding: 20px 0;
 }
 
-.container {
+.container-footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,3 +124,56 @@ textarea {
 .form-line:last-child {
     margin-bottom: 0;
 }
+* {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    padding: .5em 1em;
+    margin-bottom: .5em;
+    background-color: #0277B5;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu img {
+    margin-left: 6em;
+    width: 80px;
+    height: 45px;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 3em;
+}
+
+#menu ul li {
+    padding: 1em;
+    margin: 0 .5em; 
+    white-space: nowrap;
+    text-align: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+#menu ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+    white-space: nowrap;
+    display: block;
+}
+
+#menu ul li:hover {
+    background-color: #FAF4F4;
+}
+
+#menu ul li:hover a {
+    color: #0277B5;
+}
+
