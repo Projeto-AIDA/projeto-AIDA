@@ -1,3 +1,4 @@
+
 * {
     font-family: Helvetica;
     margin: 0;
@@ -177,3 +178,73 @@ textarea {
     color: #0277B5;
 }
 
+/* Inicio CSS Topico dos professores*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto&display=swap');
+#professors-container{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+#professors-container-tittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+    color: #0277B5;
+    font-size: 20px;
+}
+#cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.card-professor {
+    display: flex;
+    flex-direction: column;
+    background-color: #908b8b;
+    border-radius: 15px;
+    width: 20%;
+    height: fit-content;
+    margin-right: 1.5%;
+    align-items: center;
+}
+.card-img-professor {
+    width: 60px;
+    height: 60px;
+    margin-top: 3%;
+    border-image: 30px;
+    border-radius: 50%;
+}
+.card-links img{
+    margin-top: 3%;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+.card-nome-professor{
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+.card-info-professor{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.card-links {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+/* Fim CSS Topico dos professores*/
