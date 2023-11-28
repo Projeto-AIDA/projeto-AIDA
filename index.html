@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Importação de arquivos para uso do 'carousel' -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>AIDA</title>
 </head>
-<body>
+<body >
+  <div class="content-container">
 
     <div id="menu">
         <img src="assets\imgs\Group 1.png">
@@ -21,6 +28,30 @@
           </ul>
         </div>
     </div>
+
+  
+    <div class="container-projeto"> 
+      <div class="container-projeto-col">
+        <h1>Projeto de pesquisa sobre Inteligência Artificial &lt;/&gt;</h1>
+        <div class="btn-title-group" role="group" aria-label="Basic example">
+            <button type="button" id="btn-title1">UNIESP</button>
+            <button type="button" id="btn-title2">Quem somos</button>
+        </div>
+      </div>
+      <div class="container-projeto-img">
+        <img class="" src="./assets/imgs/Group 2.png" alt="image 1" width="200px">
+      </div>
+    </div>
+    
+  
+    <div id="texto-inicial" class="descricao">
+        <h1 class="descricao-titulo">PROJETOS</h1>
+        <span class="descricao-texto">
+            <p>Bem vindo (a) ao projeto inovador da UNIESP em inteligência artificial e banco de dados! 
+                Prepare-se para embarcarem em uma jornada fascinante,
+                onde exploramos o mundo da IA e seus impactos revolucionário na área de dados.</p> 
+        </span>
+
 
     <div class="container"> 
       <h1>Projeto de pesquisa sobre Inteligência Artificial</h1>
@@ -44,31 +75,35 @@
       </span>
   </div>
   
+
         
         <div class="descricao-conteudo">
-            <div class="descricao-card">
-                <img class="descricao-card-image" src="./assets/imgs/Group 2.png" alt="image 1">
-                <div class="descricao-card-texto">
-                  <p>Texto 1.</p> 
-                </div>
+          <div class="descricao-card">
+              <img class="descricao-card-image" src="./assets/imgs/digitando.jpg" alt="image 1">
+              <div class="descricao-card-texto">
+                  <h3>Explosão de Dados:</h3>
+                  <p>Explorando a interseção entre a mente humana e a inteligência artificial, onde cada tecla pressionada é uma sinfonia de possibilidades.</p>
               </div>
-            
-              <div class="descricao-card">
-                <img class="descricao-card-image" src="./assets/imgs/Group 1.png" alt="image 2">
-                <div class="descricao-card-texto">
-                    <p>Texto 2</p> 
-                </div>
+          </div>
+  
+          <div class="descricao-card">
+              <img class="descricao-card-image" src="./assets/imgs/mesa.jpg" alt="image 2">
+              <div class="descricao-card-texto">
+                  <h3>A mente humana:</h3>
+                  <p>Neste ambiente de inovação, a magia da programação acontece. Cada linha de código é um passo em direção ao futuro da inteligência artificial.</p>
               </div>
-
-              <div class="descricao-card">
-                <img class="descricao-card-image" src="./assets/imgs/Group 2.png" alt="image 3">
-                <div class="descricao-card-texto">
-                    <p>Texto 3</p> 
-                </div>
+          </div>
+  
+          <div class="descricao-card">
+              <img class="descricao-card-image" src="./assets/imgs/escrevendo.jpg" alt="image 3">
+              <div class="descricao-card-texto">
+                  <h3>Criatividade:</h3>
+                  <p>No coração da colaboração, ideias se transformam em realidade. Aqui, a inteligência artificial é moldada por mentes criativas em busca de soluções inovadoras.</p>
               </div>
+          </div>
         </div>
     </div>
-
+  
     <div class="container-artigos">
         <h1>Artigos</h1>
         <div class="card">Explosão de Dados:</div><br>
@@ -119,7 +154,7 @@
         </div>
       </div>
     </div>
-
+  
     <!-- fim -->
     <footer>
       <div class="container-footer">
@@ -145,7 +180,10 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>      
+  </div>    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="index.js"></script> 
 
 </body>
 </html>
