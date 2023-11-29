@@ -1,8 +1,19 @@
 
 * {
-    font-family: Helvetica;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+}
+.content-container {
+    margin: 0 auto; /* Centraliza o body na página */
+    background-color: rgb(250, 249, 244); /* Adapte a cor de fundo conforme necessário */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+    max-width: 1200px; /* Define a largura máxima do body */
+    width: 100%; /* Garante que o body ocupe a largura disponível */
+    box-sizing: border-box; /* Certifique-se de incluir a largura e o padding na largura total */
 }
 
 #menu {
@@ -13,6 +24,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 #menu img {
@@ -52,10 +65,38 @@
     color: #0277B5;
 }
 
+#btn-title1{    
+    background-color: blue!important;
+}
+
+#btn-title2{
+    color: blue!important;
+    background-color: rgb(181, 172, 169);
+}
+
+#btn-title1, #btn-title2 {
+    padding: 10px 20px;
+    font-size: 16px;   
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* Valor para tornar as bordas mais arredondadas */
+    cursor: pointer;
+}
+  
+#btn-title1:hover, #btn-title2:hover {
+background-color: #025a8a; /* Cor mais escura ao passar o mouse */
+}
+  
+
 footer {
     background-color: #0874b4;
     text-align: center;
     padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    width: 100%;
+    box-sizing: border-box;    
 }
 
 .container-footer {
@@ -189,6 +230,7 @@ textarea {
     justify-content: center;
     align-items: center;
     margin-bottom: 3%;
+    margin-top: 3%;
 }
 #professors-container-tittle{
     display: flex;
@@ -265,8 +307,10 @@ h1{
     background-color: #c1e0fa; 
     padding: 20px;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     text-align: center;
+    width: 100%;
+    box-sizing: border-box; 
 }
 .card {
     text-align: left;
@@ -286,6 +330,133 @@ h1{
 
 #card-aprendizado{
     margin-bottom: 40px;
+}
+
+======
+/* CSS descricao */
+
+#texto-inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    max-width: 60%;
+    margin: 0 auto;   
+    overflow: hidden; /* Adiciona overflow: hidden para evitar que os botões ultrapassem a div */
+}
+
+
+
+#descricao-card h1 {
+    color: rgb(37, 150, 190);
+
+}
+
+#descricao-card p {
+    text-align: justify;
+    width: 400px;
+    padding: 10px;
+    
+}
+
+.descricao-conteudo {
+    display: flex;
+    justify-content: center;  
+}
+
+.descricao-card {
+    width: 400px;
+    padding: 10px;  
+    margin-top: 50px;
+    
+}
+
+.container-projeto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px; 
+}
+
+.container-projeto-col {
+    max-width: 400px;
+    margin-bottom: 40px;
+    
+}
+.container-projeto-img {
+    margin-left: 100px;
+    
+}
+
+#btn1 {
+    background-color: blue;
+    color: white;
+}
+
+#btn2 {
+    background-color: white;
+    color: blue;
+}
+
+.descricao-card-texto {
+    text-align: justify;
+    max-width: 54%;    
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+.descricao-conteudo h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.descricao-conteudo img{
+    width: 50%;
+    justify-content: center;
+    display: block;
+    margin: 0 auto; 
+}
+
+/* Css do Carrossel */
+
+
+.descricao-conteudo {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .slick-slide {
+    text-align: center;
+  }  
+
+  .carousel-container {
+    max-width: 900px; 
+    margin: 0 auto; 
+  }
+
+  .slick-prev,
+  .slick-next {
+    font-size: 20px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    z-index: 1;
+    position: absolute;
+    transform: translateY(-50%);
+    cursor: pointer;       
+    
+  }
+
+.slick-next {
+    right: 60px; 
+}
+
+.slick-slide img {
+    
+    height: auto; /* Mantém a proporção original da imagem */
 }
 
 /*icones responsivos*/
