@@ -132,6 +132,10 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+    ::placeholder {
+        color: #0277B5;
+        font-size: larger;
+    }
 }
 
 .form-line input{
@@ -145,31 +149,28 @@ footer {
     margin: 5px;
     padding: 8px;
     margin-top: -10px;
+    
 }
 
 textarea {
     flex: 1;
     margin: 5px;
-    padding: 8px;
-    resize: vertical; /* Permite redimensionamento apenas vertical */
+    padding: 11px;
+    resize: vertical;
 }
 
 #btn-enviar {
+    font-size: larger;
     margin: 6px 7px;
     padding: 30px;
     background-color: rgb(255, 255, 255);
-    color: #007bff;
+    color: #0277B5;
     border: none;
     cursor: pointer;
 }
 
 .form-line:last-child {
     margin-bottom: 0;
-}
-* {
-    font-family: Helvetica;
-    margin: 0;
-    padding: 0;
 }
 
 #menu {
@@ -262,12 +263,19 @@ textarea {
     border-image: 30px;
     border-radius: 50%;
 }
-.card-links img{
-    margin-top: 3%;
-    width: 40px;
-    height: 40px;
-    margin-left: 5px;
+#lkd, #git {
+    display: inline-flex;
+    padding: 5px;
+
+    color: #0A66C2; 
+    font-size: 3vw;
+    border-radius: 20%;
 }
+
+#git {
+    color: white;
+}
+
 .card-nome-professor{
     color: #fff;
     font-weight: 700;
@@ -324,6 +332,7 @@ h1{
     margin-bottom: 40px;
 }
 
+======
 /* CSS descricao */
 
 #texto-inicial {
@@ -450,17 +459,19 @@ h1{
     height: auto; /* Mantém a proporção original da imagem */
 }
 
-
-
-
-
-  
-
-  
-
-  
-  
-  
-
-   
-   
+/*icones responsivos*/
+@media (min-width: 0px) {
+    #lkd, #git {
+        font-size: 5vw;
+    }
+}
+@media (min-width: 900px) {
+    #lkd, #git {
+        font-size: 3vw;
+    }
+}
+@media (min-width: 1600px) {
+    #lkd, #git {
+        font-size: 2vw;
+    }
+}
